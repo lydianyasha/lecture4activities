@@ -1,0 +1,173 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #fff8f0;
+    color: #4b2e2e;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #6b3e26;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd6a5;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #f4a261, #e76f51);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+/* SECTION LAYOUT */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+.section img {
+    width: 45%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.text {
+    width: 50%;
+}
+
+.text h2 {
+    margin-bottom: 15px;
+    color: #8b4513;
+}
+
+.text p {
+    line-height: 1.6;
+}
+
+/* REVERSE LAYOUT */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6b3e26;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .section img,
+    .text {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+/* FORM STYLING */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border: 2px solid #e0c3a3;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #8b4513;
+}
+
+/* TEXTAREA SIZE */
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* BUTTON */
+form button {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #a0522d;
+}
+
+/* SUCCESS / ERROR MESSAGE */
+#formMessage {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
